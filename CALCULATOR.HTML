@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        online calculator 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>JavaScript Online Calculator</center></h1>
+	<hr>
+			<div class="calculator-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>First Number*</label><label class="validation-error hide" id="firstnumberValidationError">
+                        This field is required.</label>
+                       <input type="text" name="firstno" id="firstno">   
+                    </div>
+                    <div>
+                        <label>Second Number*</label><label class="validation-error hide" id="secondnumberValidationError">
+                        This field is required.</label>
+                        <input type="text" name="secondno" id="secondno">
+                    </div>
+                    <div>
+                        <label>Operator</label>
+                        <input type="text" name="operator" id="operator">
+                    </div>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="calculate">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "calculator-table">
+                <table class="list" id="calculatorList">
+                    <thead>
+                        <tr>
+                            <th>Result</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
